@@ -7,13 +7,13 @@ import { codeInput } from "@sanity/code-input";
 import { unsplashImageAsset } from "sanity-plugin-asset-source-unsplash";
 import Logo from "./components/Logo";
 
-const projectId = process.env.SANITY_STUDIO_PROJECT_ID || "your-project-id";
+const projectId = process.env.SANITY_STUDIO_PROJECT_ID || "your_project_id";
 const dataset = process.env.SANITY_STUDIO_DATASET || "production";
 
 export default defineConfig({
 	icon: Logo,
 	name: "default",
-	title: "Sane Kit Studio",
+	title: "Capitalsnapshot",
 	projectId,
 	dataset,
 	plugins: [
@@ -24,7 +24,6 @@ export default defineConfig({
 		internationalizedArray({
 			languages: [
 				{ id: "en", title: "English" },
-				{ id: "pt_BR", title: "Brazilian Portuguese" },
 			],
 			defaultLanguages: ["en"],
 			fieldTypes: ["string", "text"],
@@ -36,7 +35,7 @@ export default defineConfig({
 	beta: {
 		create: {
 			// Required for Create integration
-			fallbackStudioOrigin: "sane-demo.sanity.studio",
+			fallbackStudioOrigin: "capitalsnapshot.sanity.studio",
 		},
 	},
 });
