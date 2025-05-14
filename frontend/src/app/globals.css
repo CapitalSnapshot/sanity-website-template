@@ -1,7 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* @custom-variant dark (&:is(.dark *)); */
+@custom-variant dark (&:is(.dark *));
+@custom-variant light (&:is(.light *));
 
 @theme inline {
   --color-background: var(--background);
@@ -110,6 +111,40 @@
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.552 0.016 285.938);
+}
+
+.light {
+  --background: oklch(0.99 0 0); /* near white background */
+  --foreground: oklch(0.18 0.02 260); /* dark navy text */
+  --card: oklch(0.97 0 0); /* subtle off-white cards */
+  --card-foreground: oklch(0.18 0.02 260);
+  --popover: oklch(0.97 0 0);
+  --popover-foreground: oklch(0.18 0.02 260);
+  --primary: oklch(0.4 0.08 250); /* fintech blue (trust signal) */
+  --primary-foreground: oklch(0.99 0 0); /* white text on primary */
+  --secondary: oklch(0.87 0.01 260); /* soft gray secondary */
+  --secondary-foreground: oklch(0.18 0.02 260);
+  --muted: oklch(0.94 0 0); /* lighter muted surface */
+  --muted-foreground: oklch(0.35 0.01 260);
+  --accent: oklch(0.65 0.12 190); /* teal accent for fintech freshness */
+  --accent-foreground: oklch(0.99 0 0);
+  --destructive: oklch(0.65 0.2 25); /* soft but noticeable red */
+  --border: oklch(0 0 0 / 8%);
+  --input: oklch(0 0 0 / 5%);
+  --ring: oklch(0.4 0.08 250); /* match primary for focus ring */
+  --chart-1: oklch(0.4 0.08 250); /* primary blue for charts */
+  --chart-2: oklch(0.65 0.12 190); /* teal */
+  --chart-3: oklch(0.65 0.2 25); /* red */
+  --chart-4: oklch(0.45 0.1 120); /* deep green for growth metrics */
+  --chart-5: oklch(0.8 0.15 70); /* golden highlight */
+  --sidebar: oklch(0.98 0 0); /* slightly off-white sidebar */
+  --sidebar-foreground: oklch(0.18 0.02 260);
+  --sidebar-primary: oklch(0.4 0.08 250); /* fintech blue */
+  --sidebar-primary-foreground: oklch(0.99 0 0);
+  --sidebar-accent: oklch(0.65 0.12 190); /* teal accent */
+  --sidebar-accent-foreground: oklch(0.99 0 0);
+  --sidebar-border: oklch(0 0 0 / 8%);
+  --sidebar-ring: oklch(0.4 0.08 250);
 }
 
 
